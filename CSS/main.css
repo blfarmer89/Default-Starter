@@ -67,7 +67,7 @@ html {
   /* rest of vars */
   --backgroundColor: var(--grey-100);
   --textColor: var(--grey-900);
-  --borderRadious: 0.25rem;
+  --borderRadius: 0.25rem;
   --letterSpacing: 1px;
   --transition: all 0.3s linear;
   --max-width: 1170px;
@@ -146,11 +146,39 @@ ul {
 .container {
   width: 40vw;
   border: 5px solid var(--primary-500);
-  border-radius: var(--borderRadious);
+  border-radius: var(--borderRadius);
   max-width: var(--max-width);
 }
 .img {
   width: 100%;
   display: block;
   object-fit: cover;
+}
+
+.btn {
+  cursor: pointer;
+  color: var(--white);
+  background: var(--primary-500);
+  border: transparent;
+  border-radius: var(--borderRadius);
+  letter-spacing: var(--letterSpacing);
+  padding: 0.375rem 0.75rem;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  text-transform: capitalize;
+}
+
+.btn:hover {
+  background: var(--primary-700);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-hipster {
+  background: var(--primary-200);
+  color: var(--primary-500);
+}
+
+.btn-hipster:hover {
+  background: var(--primary-500);
+  color: var(--primary-800);
 }
